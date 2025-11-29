@@ -7,7 +7,7 @@ import Car from "../models/car.js";
 
  const createToken = (userId)=>{
     const payload = userId;
-    return jwt.sign(payload, process.env.jwt_secret)
+    return jwt.sign(payload, process.env.JWT_SECRET)
  }
 
   //// SignUp
