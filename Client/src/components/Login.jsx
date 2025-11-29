@@ -20,9 +20,9 @@ const Login = () => {
              console.log("login data",data);
 
              if(data.token){
-                navigate('/')
                 setToken(data.token)
                 localStorage.setItem('token', data.token)
+                navigate('/')
                 setShowLogin(false)
              }
              else{
