@@ -16,7 +16,7 @@ const Login = () => {
           e.preventDefault();
            try {
              
-             const {data} = await axios.post(`/api/user/${state}`,{email,password})
+             const {data} = await axios.post(`/api/user/${state}`,{email,password, name})
              console.log("login data",data);
 
              if(data.token){
